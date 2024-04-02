@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Redirect Page</title>
+    <style>
+        body {
+            text-align: center;
+        }
+    </style>
+    <script>
+        var countdown = 3;
+
+        function updateCountdown() {
+            var countdownElement = document.getElementById('countdown');
+            countdownElement.innerHTML = countdown;
+            countdown--;
+
+            if (countdown < 0) {
+                clearInterval(timer);
+                window.location.href = 'https://loot-link.com/s?qS0K';
+            }
+        }
+
+        var timer = setInterval(updateCountdown, 1000);
+    </script>
+</head>
+<body>
+    <h1>Checkpoint 1 Complete :D</h1>
+    <p>Redirecting you in <span id="countdown">3</span>...</p>
+</body>
+</html>
